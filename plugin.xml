@@ -99,8 +99,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <source-file src="src/ios/CDVLocation.m" />
         <framework src="CoreLocation.framework" />
         
-        <preference name="GEOLOCATION_USAGE_DESCRIPTION" default=" " />
-        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+        <preference name="GEOLOCATION_USAGE_DESCRIPTION" default="This App Would Like to Automatically Record your Trips by Tracking your Location." />
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
             <string>$GEOLOCATION_USAGE_DESCRIPTION</string>
         </config-file>
 
